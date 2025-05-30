@@ -17,7 +17,7 @@ def hello_world():
     # Realizar una suma sencilla
     suma = 5 + 3
     return jsonify({
-        "message": "Hello, if you see this, PR works!",
+        "message": "Hello, if you see this, EC2 WORKS!",
         "client_ip": client_ip,
         "suma": f"5 + 3 = {suma}",
         "resultado": suma
