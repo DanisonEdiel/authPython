@@ -28,9 +28,7 @@ jobs:
         context: .
         push: true
         tags: |
-          # Etiqueta 'latest' para siempre tener la versión más reciente
           ${{ secrets.DOCKERHUB_USERNAME }}/authpython:latest
-          # Etiqueta con el hash del commit para tener una referencia única por cada versión
           ${{ secrets.DOCKERHUB_USERNAME }}/authpython:${{ github.sha }}
     
     - name: Trigger EC2 Update
